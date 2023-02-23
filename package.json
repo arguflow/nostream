@@ -26,7 +26,6 @@
     "dev": "node -r ts-node/register src/index.ts",
     "clean": "rimraf ./{dist,.nyc_output,.test-reports,.coverage}",
     "build": "tsc --project tsconfig.build.json",
-    "prestart": "npm run build",
     "start": "cd dist && node src/index.js",
     "build:check": "npm run build -- --noEmit",
     "lint": "eslint --ext .ts ./src ./test",
